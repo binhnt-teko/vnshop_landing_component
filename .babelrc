@@ -1,0 +1,39 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "modules": "auto",
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "Firefox ESR",
+            "> 1%",
+            "ie >= 8",
+            "iOS >= 8",
+            "Android >= 4"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd"
+      }
+    ],
+    [
+      "@babel/plugin-transform-modules-commonjs",
+      {
+        "allowTopLevelThis": true,
+        "loose": true,
+        "lazy": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
+}
