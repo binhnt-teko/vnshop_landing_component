@@ -2,7 +2,7 @@
   "name": "Teko-landing-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost/templates",
+  "homepage": ".",
   "dependencies": {
     "@ant-design/compatible": "^1.0.8",
     "@emotion/core": "10.1.1",
@@ -30,6 +30,7 @@
     "customize-cra-less-loader": "^1.0.0",
     "deep-eql": "^4.0.0",
     "enquire-js": "^0.2.1",
+    "esm": "^3.2.25",
     "jquery": "^3.5.1",
     "leancloud-storage": "^4.10.0",
     "pathfinding": "^0.4.18",

@@ -1,14 +1,13 @@
 const path = require('path');
 const fs = require('fs');
 
-const editConfigPath = "site/edit/template"
 const dataFileName = "data.js"
 const codeFileName = "index.jsx"
 const lessFileName = "index.less"
 
 
 //joining path of directory 
-const templatePath = 'site/templates/template/element'
+const templatePath = 'src/template/element'
 const directoryPath = path.join(__dirname, templatePath);
 
 categoryPaths = fs.readdirSync(directoryPath);
@@ -63,7 +62,7 @@ CheckAllCategory(categoryPaths)
 //Write data for files 
 // console.log(tempData);
 
-configDataFile = path.join("site/config", "data.json");
+configDataFile = path.join("data", "data_template_list.json");
 fs.writeFile(configDataFile, JSON.stringify(tempData), function (err) {
     if (err) {
         return console.log("Error in writing file", err);
